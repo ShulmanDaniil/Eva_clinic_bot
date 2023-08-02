@@ -32,7 +32,7 @@ def func(message):
   btn6 = types.KeyboardButton("3️⃣Нужно ли переводить документы на испанский язык ?")
   btn7 = types.KeyboardButton("4️⃣Какие документы нужно подготовить до отлета в Аргентину для подачи на DNI старшим детям ?")
   btn8 = types.KeyboardButton("5️⃣Какие документы необходимо иметь родителям чтобы оформить родившемуся ребенку гражданство Аргентины ?")
-  btn9 = types.KeyboardButton("6️⃣Если я лечу в Аргентину без отца ребенка - мне хватит этих же документов?")
+  btn9 = types.KeyboardButton("6️⃣Если я лечу в Аргентину без отца ребенка - мне хватит этих документов?")
   btn11 = types.KeyboardButton("Вернуться в главное меню")
   markup.add(btn4, btn5, btn6, btn7, btn8, btn9, btn11)
   bot.send_message(message.chat.id, text="Отлично, что Вас интересует дальше?", reply_markup=markup)
