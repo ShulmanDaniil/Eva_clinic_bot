@@ -17,7 +17,7 @@ bot = telebot.TeleBot(token)
 def start(message):
  markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=1)
  btn1 = types.KeyboardButton('📋Список документов, для подачи на DNI в Аргентине')
- btn2 = types.KeyboardButton('😊Ответы на 6 самых популярных вопросов по сбору документов')
+ btn2 = types.KeyboardButton('😊Ответы на 6 самых частых вопроса по сбору документов')
  btn10 = types.KeyboardButton('✍🏻Тут можно задать оставшиеся  вопросы специалисту')
  markup.add(btn1, btn2, btn10)
  second_mess = f'Добный день {message.from_user.first_name} , выберите интересующий Вас вопрос: ' #{message.from_user.last_name}
@@ -68,7 +68,7 @@ def func(message):
  elif (message.text == "Вернуться в главное меню"):
   markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=1)
   btn1 = types.KeyboardButton('📋Список документов, для подачи на DNI в Аргентине')
-  btn2 = types.KeyboardButton('😊Ответы на 6 самых популярных вопросов по сбору документов')
+  btn2 = types.KeyboardButton('😊Ответы на 6 самых частых вопроса по сбору документов')
   btn10 = types.KeyboardButton('✍🏻Тут можно задать оставшиеся  вопросы специалисту')
   markup.add(btn1, btn2, btn10)
   second_mess = f'Добный день {message.from_user.first_name} {message.from_user.last_name},выберите интересующий Вас вопрос: '
