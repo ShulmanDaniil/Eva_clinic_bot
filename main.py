@@ -3,7 +3,15 @@ from telebot import types
 #token  = "6264450173:AAEYvLntbciBDBSViKAHF3wE0H_nKRhHbhI"
 #bot = telebot.TeleBot("6264450173:AAEYvLntbciBDBSViKAHF3wE0H_nKRhHbhI")
 #token = "6283619345:AAENfDWxCuLuHCjkOlx4BOFOr0Pw62cA3HM"
-bot = telebot.TeleBot("6283619345:AAENfDWxCuLuHCjkOlx4BOFOr0Pw62cA3HM")
+# bot = telebot.TeleBot("6283619345:AAENfDWxCuLuHCjkOlx4BOFOr0Pw62cA3HM")
+
+# DEBUG
+# TODO: Add debug token bot
+# token = ""
+# RELEASE
+token = "6283619345:AAECa5Dyx-8elm3gbpskGIyyXEVE9zOa7Jc"
+
+bot = telebot.TeleBot(token)
 
 @bot.message_handler(commands=['start'])
 def start(message):
